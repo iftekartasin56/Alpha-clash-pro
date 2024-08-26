@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Using Javascript And AppendChild</title>
+
+   
+</head>
+<body>
+    <header>
+        <h1>Welcome to my blog website</h1>
+    </header>
+    <main>
+        <section class="blogs" id="blogs">
+            <header>
+                <h2>Blogs list</h2>
+                <ul id="blog_list">
+                    <li>Blog- 1</li>
+                    <li>Blog- 2</li>
+                    <li>Blog- 3</li>
+                    <li>Blog- 4</li>
+                </ul>
+            </header>
+
+            <article class="blog">
+                <h3 id="first_title">My Awesome Blog - 1 </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel magni officia ex quibusdam vero? Inventore facere quidem ea quam reprehenderit nihil fuga, corporis illo, repudiandae recusandae similique nulla natus veritatis!</p>
+            </article>
+            <article class="blog">
+                <h3 id="second_title">My Awesome Blog - 2 </h3>
+                <p>Unde tempore atque sunt. Quod impedit iure molestias, recusandae consequatur, eos atque tempora modi esse nihil nesciunt dicta voluptas. Excepturi velit necessitatibus, modi minima nam unde? Inventore architecto dolore labore?</p>
+            </article>
+            <article class="blog">
+                <h3 id="third_title">My Awesome Blog - 3 </h3>
+                <p>Quod, vero. Doloribus deserunt assumenda illo. Repudiandae reiciendis quo incidunt mollitia. Doloremque totam ea quis perferendis harum, placeat laborum illo eligendi vitae, quia eum. Ea quas animi ut quos quidem.</p>
+            </article>
+            <article class="blog">
+                <h3 id="fourth_title">My Awesome Blog - 4 </h3>
+                <p>Quod, vero. Doloribus deserunt assumenda illo. Repudiandae reiciendis quo incidunt mollitia. Doloremque totam ea quis perferendis harum, placeat laborum illo eligendi vitae, quia eum. Ea quas animi ut quos quidem.</p>
+            </article>
+        </section>
+    </main>
+
+    <script>
+
+        // add article
+        const article = document.createElement('article');
+        article.classList.add('blog');
+        // const h3 = document.createElement('h3');
+        // h3.innerText = 'My Awesome Blog - 5';
+        // const p = document.createElement('p');
+        // p.innerText = 'Quod, vero. Doloribus deserunt assumenda illo. Repudiandae reiciendis quo incidunt mollitia. Doloremque totam ea quis perferendis harum, placeat laborum illo eligendi vitae, quia eum. Ea quas animi ut quos quidem.';
+
+        // article.appendChild(h3);
+        // article.appendChild(p);
+
+        article.innerHTML = `
+            <h3>My Awesome Blog - 5 </h3>
+            <p>Quod, vero. Doloribus deserunt assumenda illo. Repudiandae reiciendis quo incidunt mollitia. Doloremque totam ea quis perferendis harum, placeat laborum illo eligendi vitae, quia eum. Ea quas animi ut quos quidem.</p>
+        `
+
+        // parent of article
+        const blogSection = document.getElementById('blogs');
+        blogSection.appendChild(article);
+
+
+        // get element by id
+       const secondTitle = document.getElementById('second_title');
+
+        secondTitle.style.textAlign = 'center';
+
+        const thirdTitle = document.getElementById('third_title');
+
+        thirdTitle.innerText = 'Title Updated By JS';
+
+        thirdTitle.style.backgroundColor = 'salmon';
+        thirdTitle.style.padding = '20px';
+        thirdTitle.style.margin = '10px';
+
+        //get elements by class name
+        const blogs = document.getElementsByClassName('blog');
+
+        for(const blog of blogs){
+        blog.style.border = '2px solid orange';
+        blog.style.borderRadius = '10px';
+        blog.style.margin = '5px';
+        blog.style.padding = '5px';
+        }
+
+        const blogss = document.querySelectorAll('.blog');
+
+        //Create and add element by using JS
+
+        // Create the element
+        const li = document.createElement('li');
+        li.innerText = 'Blog - 5';
+
+        // Where to add
+        const ul = document.getElementById('blog_list');
+
+        // append new element
+        ul.appendChild(li);
+
+
+        
+    </script>
+</body>
+</html>

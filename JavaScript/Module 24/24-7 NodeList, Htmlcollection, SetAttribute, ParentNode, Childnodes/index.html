@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore GetElementsByClassName And QuerySelectorAll</title>
+
+    <style>
+        /* #second_title{
+            background-color: rgba(210, 105, 30, 0.178);
+        } */
+
+        /* .blog{
+            border: 2px solid orange;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my blog website</h1>
+    </header>
+    <main>
+        <section>
+            <article class="blog">
+                <h3 id="first_title">My Awesome Blog - 1 </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel magni officia ex quibusdam vero? Inventore facere quidem ea quam reprehenderit nihil fuga, corporis illo, repudiandae recusandae similique nulla natus veritatis!</p>
+            </article>
+            <article class="blog">
+                <h3 id="second_title">My Awesome Blog - 2 </h3>
+                <p>Unde tempore atque sunt. Quod impedit iure molestias, recusandae consequatur, eos atque tempora modi esse nihil nesciunt dicta voluptas. Excepturi velit necessitatibus, modi minima nam unde? Inventore architecto dolore labore?</p>
+            </article>
+            <article class="blog">
+                <h3 id="third_title">My Awesome Blog - 3 </h3>
+                <p>Quod, vero. Doloribus deserunt assumenda illo. Repudiandae reiciendis quo incidunt mollitia. Doloremque totam ea quis perferendis harum, placeat laborum illo eligendi vitae, quia eum. Ea quas animi ut quos quidem.</p>
+            </article>
+            <article class="blog">
+                <h3 id="fourth_title">My Awesome Blog - 4 </h3>
+                <p>Quod, vero. Doloribus deserunt assumenda illo. Repudiandae reiciendis quo incidunt mollitia. Doloremque totam ea quis perferendis harum, placeat laborum illo eligendi vitae, quia eum. Ea quas animi ut quos quidem.</p>
+            </article>
+        </section>
+    </main>
+
+    <script>
+       const secondTitle = document.getElementById('second_title');
+
+       secondTitle.setAttribute('title', 'I added a tooltip using JS');
+
+       secondTitle.parentNode.parentNode;
+    </script>
+</body>
+</html>

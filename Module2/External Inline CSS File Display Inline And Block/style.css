@@ -1,0 +1,10 @@
+h1{
+    color: salmon;
+    text-align: center;
+}
+small{
+    display: block;
+}
+h3{
+    display: inline;
+}

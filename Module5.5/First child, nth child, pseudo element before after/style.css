@@ -1,0 +1,20 @@
+li:first-child{
+    color: chocolate;
+}
+/* li:last-child{
+    background-color: cornflowerblue;
+} */
+li:nth-child(2n){
+    color: crimson;
+}
+li:nth-child(2n+1){
+    background: darkgrey;
+}
+h3::before{
+    content: 'Hello-';
+}
+h3::after{
+    content: '-Gello';
+    background-color: darkkhaki;
+    font-size: 25px;
+}

@@ -1,0 +1,23 @@
+.swimming{
+    /* position: relative; */
+}
+.swimming div {
+    /* border: 1px dashed palevioletred; */
+    /* width: 200px; */
+}
+#boy{
+    position: relative;
+    top: 75px;
+    z-index: 2;
+}
+#ring{
+    /* position: absolute; */
+    position: relative;
+    z-index: 1;
+    /* left: 30px; */
+    /* top: 40px; */
+}
+#water{
+    position: relative;
+    top: -75px;
+}

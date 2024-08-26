@@ -1,0 +1,395 @@
+/* universal selector  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* poppins fonts from google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefefe;
+    color: #3A3A3A;
+}
+
+/* common style  */
+.container{
+    padding: 30px 120px 0px 120px;
+}
+.btn {
+    background-color: #ff7926;
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+   transition: all 0.3s ease;
+    
+}
+.btn:hover{
+   transform: translateY(-10px);
+   background-color: black;
+   cursor: pointer;   
+}
+.clr{
+    color: #ff7926;
+}
+iframe{
+    
+    width: 460px;
+    height: 315px;
+
+}
+
+/* nav-menu style */
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+nav ul li,.fa-search,.fa-shopping-cart{
+    list-style: none;
+    margin: 0 10px;
+}
+nav ul li a,.fa-search, .fa-shopping-cart{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+}
+.fa-search, .fa-shopping-cart{
+    color: #ff7926;
+}
+.logo{
+    color: #3A3A3A;
+    font-size:24px;
+}
+
+/* hero section design */
+.hero-section{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    align-items: center;
+}
+.hero-left{
+    padding-right:0px;
+    flex: 1;
+}
+.hero-left h1{
+    font-size: 52px;
+    font-weight: 700;
+}
+.hero-left p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 16px 0;
+    
+}
+
+.hero-right{
+    flex: 1;
+    padding-left: 50px;
+}
+.hero-right img{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(233, 230, 230, 0.664);
+    border-radius: 50%;
+}
+
+/* company logo section  */
+.company{
+   display: flex; 
+   height: 100px;
+   width: 80vw;
+   justify-content: space-evenly;
+   align-items: center;
+   border-top: 1px solid rgba(235, 233, 233, 0.747);
+   border-bottom: 1px solid rgba(235, 233, 233, 0.747);
+}
+
+/* popular collection section style  */
+
+
+.popular-collection{
+height: 100 vh;
+width: 100%;
+margin-bottom:10px ;
+}
+.popular-collection>.btn{
+    margin: 30px 0px 0px 820px;  
+}
+.section-title{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    padding: 100px 0 30px 0;
+}
+.collection-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);  
+    grid-gap: 30px;  
+}
+.collection{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(133, 131, 131, 0.63);
+border-radius: 5px;
+    
+}
+.collection img{
+    width: 300px;
+    height: 256px;
+}
+.collection h3,h4{
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.star{
+    color: #FB8200;
+    padding: 10px 0;
+}
+.description{
+    font-size: 14;
+    font-weight: 700;
+    padding-top: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.9px;
+    
+}
+
+/* video section  */
+.user-guide{
+margin-bottom: 50px;
+display: flex;
+height: 400px;
+width: 100%;
+justify-content: center;
+align-items: center;
+}
+.left-side{
+flex: 1;
+padding-right:10px;
+
+}
+.right-side{
+    padding: 20px;
+    flex: 1;
+    
+}
+.right-side h2{
+    font-size: 28px;
+    padding-bottom: 20px ;
+}
+.right-side p{
+    font-size: 16px;
+    font-weight: 500;
+    padding:20px 0 ;
+}
+.right-side>ul span{
+    font-weight: bold;
+}
+
+
+/* footer desigh  */
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  justify-content:  center;
+}
+footer p{
+    font-size: 14px;
+}
+.social i{
+    margin-right: 5px;
+}
+
+#check{
+    display: none;
+}
+.menu-btn{
+    font-size: 22px;
+    display: none;
+}
+
+/*=================
+ mobile responsive
+ ==================*/
+
+@media (max-width:768px) {
+
+    .container{
+        padding: 5px 20px 0px 20px;
+    }
+    .hero-section{
+        margin: 50px 0;
+    }
+    
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left:-100%;
+        background: #fff;
+        height: 100%;
+        width: 100vw;
+        display: block;
+        text-align: center;
+
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    #check:checked ~.menu-btn i::before{
+        content: "\f00d";
+    }
+   .menu-btn{
+    display: block;
+   }
+   .logo{
+    color: #3A3A3A;
+    font-size:20px;
+}
+
+.hero-section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.hero-left h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+.hero-right img{
+   width: 60%;
+}
+
+.company{
+    display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.collection-box{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.popular-collection>.btn{
+    margin: 30px 0px 0px 0px;  
+}
+
+
+.user-guide{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}   
+
+}
+
+/*=================
+ Tablet Responsige
+ ================== */
+
+@media (min-width:769px) and (max-width: 1024px) {
+   
+    .hero-section{
+        margin: 100px 0;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left:-100%;
+        background: #fff;
+        height: 100%;
+        width: 100%;
+        display: block;
+        text-align: center;
+
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+
+    nav ul li a,.fa-search, .fa-shopping-cart{
+        text-decoration: none;
+        color: #3A3A3A;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    #check:checked ~ ul{
+        left:0;
+    }
+    #check:checked ~.menu-btn i::before{
+        content: "\f00d";
+    }
+   .menu-btn{
+    display: block;
+    font-size: 30px;
+   }
+   .logo{
+    color: #3A3A3A;
+    font-size:25px;
+}
+
+.hero-section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.hero-left h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+.hero-right img{
+   width: 80%;
+   padding-bottom: 10px;
+}
+
+.collection-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.popular-collection>.btn{
+    margin: 30px 0px 0px 0px;  
+}
+
+
+.user-guide{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}    
+
+
+iframe{
+    
+    width: 100vw;
+    height: 100vh;
+
+}
+     }

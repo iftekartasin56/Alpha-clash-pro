@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Responsiveness using Media query and flexbox</title>
+</head>
+<style>
+    .menu-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .food{
+        border: 3px solid rosybrown;
+        width: 300px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .food img{
+        width: 75%;
+    }
+    .food-price{
+        font-size: 30px;
+    }
+    .pr-vl{
+        font-size: 35px !important;
+        font-weight: 400;
+        color: red;
+    }
+    .food-para{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    .btn{
+        font-size: 16px;
+        font-weight: 500;
+        background-color: #000;
+        color: #fff;
+        padding: 10px 15px;
+        margin-top: 20px;
+    }
+    /* @media (max-width: 700px) {
+        .food{
+            background-color: sandybrown;
+            margin-bottom: 20px;
+        }
+        .menu-container{
+            flex-direction: column;
+        }
+    }
+    @media (min-width: 900px) {
+        .food{
+            background-color: rebeccapurple;
+        }
+    } */
+</style>
+<body>
+    <div class="menu-container">
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <h2 class="food-price">price:<span class="pr-vl"><i>$100</i></span></h2>
+            <p class="food-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quibusdam fugit, ea ipsa fuga similique ab, illum harum vitae praesentium officiis vel incidunt consectetur molestiae esse recusandae, perspiciatis autem optio. Nisi dolores doloremque, ipsam cupiditate, eos nostrum ad ipsum numquam tenetur commodi quibusdam iste. Minus, corporis cum. Est, praesentium dignissimos?<br>
+            <button class="btn btn-primary">Order Now</button></p>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <h2 class="food-price">price:<span class="pr-vl"><i>$85</i></span></h2>
+            <p class="food-para">Modi sunt maiores veniam facere voluptas, sint, enim sit velit dolorum iusto saepe dignissimos, nobis dolorem quas autem voluptate nemo? Est labore quam quibusdam blanditiis dolor consequuntur earum laborum! Alias minus ipsa sit officiis eius quos suscipit quis sunt quam! Recusandae odio eos ducimus minus doloribus. Cumque voluptates beatae qui.<br>
+            <button class="btn btn-primary">Order Now</button></p>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <h2 class="food-price">price:<span class="pr-vl"><i>$102</i></span></h2>
+            <p class="food-para">Recusandae, quam mollitia quibusdam, itaque optio vero eum expedita quo laudantium doloremque assumenda, sequi pariatur voluptates voluptate dolor eligendi architecto unde id minus. Aperiam eveniet excepturi nobis earum quod incidunt ducimus harum mollitia maiores facilis quam repellat repellendus amet officiis doloribus fugit, omnis quisquam ipsam. Nemo perferendis aperiam eveniet quidem.<br>
+            <button class="btn btn-primary">Order Now</button></p>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <h2 class="food-price">price:<span class="pr-vl"><i>$103</i></span></h2>
+            <p class="food-para">Eius illum tenetur consectetur cupiditate minima ducimus laudantium voluptatibus fugiat! Iste eius harum expedita deserunt dolorem, quia tempora voluptatibus voluptate impedit, temporibus odio ipsum quis itaque eum veritatis commodi. In, magni iusto? Laboriosam dolores, exercitationem maxime nostrum, deleniti corrupti dolorem itaque, eius ex officiis optio delectus nisi. Dignissimos, obcaecati molestiae?<br>
+            <button class="btn btn-primary">Order Now</button></p>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <h2 class="food-price">price:<span class="pr-vl"><i>$50</i></span></h2>
+            <p class="food-para">Similique, veritatis. Accusamus, laborum ullam. Quisquam, commodi! Tenetur quas amet ex cumque quidem exercitationem quisquam commodi totam molestiae numquam, placeat eligendi accusantium eum, deserunt, voluptates illo consequatur maxime. Iusto harum ea quam reprehenderit in excepturi quae. Accusantium animi dolorem dolores eius non expedita dolorum suscipit iste, delectus itaque nam quo.<br>
+            <button class="btn btn-primary">Order Now</button></p>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <h2 class="food-price">price:<span class="pr-vl"><i>$130</i></span></h2>
+            <p class="food-para">Impedit provident vel perferendis ea pariatur accusantium at, repellendus harum? Est dolores atque modi soluta cum, necessitatibus maiores possimus dolor, amet, consequatur reprehenderit a voluptate porro eveniet omnis? Officiis eveniet magnam eos! Accusantium dolorem ea excepturi commodi voluptatem impedit, provident nemo distinctio iste molestiae explicabo earum quas, cumque minima consectetur!<br>
+            <button class="btn btn-primary">Order Now</button></p>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <h2 class="food-price">price:<span class="pr-vl"><i>$60</i></span></h2>
+            <p class="food-para">Sunt facilis aperiam, quos, corrupti harum doloremque natus iusto impedit nemo, error exercitationem quas illo accusantium ut eligendi pariatur odio laudantium perspiciatis perferendis rerum tenetur porro beatae iste placeat. Atque dolor ratione, illum et saepe temporibus dolorum sed adipisci corporis animi itaque voluptas, autem similique vel! Corporis possimus facere harum?<br>
+            <button class="btn btn-primary">Order Now</button></p>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <h2 class="food-price">price:<span class="pr-vl"><i>$150</i></span></h2>
+            <p class="food-para">Eligendi pariatur eum delectus blanditiis ducimus illo laudantium sed rem labore animi, doloremque nesciunt, itaque placeat nisi tempore modi quis! Ad, accusantium unde! Atque repellendus incidunt eligendi aut libero doloribus facilis ipsa exercitationem deleniti vitae vel nobis cumque ut, assumenda laudantium rerum corporis voluptate quis, autem quae modi? Perferendis, ut.<br>
+            <button class="btn btn-primary">Order Now</button></p>
+        </div>
+    </div>
+</body>
+</html>

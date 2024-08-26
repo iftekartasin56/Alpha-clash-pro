@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flexbox, flex direction justify content align items</title>
+</head>
+
+<style>
+    .container{
+        height: 500px;
+        border: 1px solid #000;
+        display: flex;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        align-items: stretch;
+    }
+    .box{
+        width: 200px;
+        /* height: 200px; */
+        /* font-size: 3em; */
+        border: 1px solid #d9d9d9;
+    }
+    #box_1{
+        /* order: 2; */
+    }
+    #box_2{
+        /* order: 1; */
+        flex-grow: 1;
+    }
+</style>
+<body>
+    <h1>I am A Flexible Right Now.</h1>
+    <div class="container">
+        <div id="box_1" class="box">BOX-1</div>
+        <div id="box_2" class="box">
+            <h3>BOX-2</h3>
+            <article class="blog">
+                <h4>Blog-1</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti delectus earum non quae adipisci veniam, sint aliquid exercitationem esse odio fuga tenetur reiciendis dicta ullam blanditiis consequuntur, deleniti aspernatur!</p>
+            </article>
+            <article class="blog">
+                <h4>Blog-2</h4>
+                <p>Sit impedit voluptates officia doloribus aliquam vero iste corporis quas eaque repudiandae quia molestias modi sapiente facilis incidunt molestiae ratione, iusto, beatae exercitationem vel a praesentium nihil iure illum! Omnis?</p>
+            </article>
+            <article class="blog">
+                <h4>Blog-3</h4>
+                <p>Fugiat nam ab recusandae pariatur facere atque quidem rerum, incidunt doloremque, numquam, magni exercitationem officiis reprehenderit cum sapiente architecto corporis at minima nesciunt. Harum ducimus quis sequi dolore quisquam repellendus?</p>
+            </article>
+        </div>
+        <!-- <div class="box">BOX-3</div> -->
+    </div>
+</body>
+</html>

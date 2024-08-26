@@ -1,0 +1,33 @@
+div{
+    background-color: lightcoral;
+    color: #fff;
+    width: 300px;
+    height: 250px;
+    padding-top: 35px;
+    margin-top: 50px;
+}
+div h1{
+    background-color: lightseagreen;
+}
+div p{
+    background-color: blueviolet;
+}
+h1{
+    background-color: #191919;
+    color: #fff;
+    border: 3px solid red;
+}
+span{
+    background-color: brown;
+    color: #fff;
+    width: 200px;
+    height: 250px;
+    /* display: inline-block; */
+}
+
+a{
+    background-color: chocolate;
+    text-decoration: none;
+    color: #fff;
+
+}
